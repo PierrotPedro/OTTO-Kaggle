@@ -151,3 +151,4 @@ test_loss, test_acc = model.evaluate_generator(test_loader)
 # ATM, the model does not learn anything, it classifies everybody in the majority class.
 # To change that, I tried with a loss that takes into account the imbalance,
 # but does not change the fact that it struggles to learn.
+# The ignore_index set to -100 is to be compatible with the padding
