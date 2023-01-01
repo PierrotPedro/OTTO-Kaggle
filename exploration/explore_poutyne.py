@@ -44,7 +44,7 @@ fully_connected_network = nn.Linear(input_dim, tag_dimension)
 
 types_dict = {"clicks":0, "carts":1, "orders":2}
 
-train_data = pd.read_json('../raw-data/first_samples.json')
+train_data = pd.read_json('../raw-data/first_samples.json') # Run data_exploration.ipynb if file is missing
 vectorized_data = []
 counts = None
 # From the data generate a list of sequences of format [seq1, seq2 ....
